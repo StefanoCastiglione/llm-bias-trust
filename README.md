@@ -3,6 +3,7 @@
 Code of the system developed for the master's thesis in Computer Science at Politecnico di Milano.
 
 Author: Stefano Castiglione
+
 Advisor: Prof. Cinzia Cappiello
 
 
@@ -25,29 +26,29 @@ Overall, this work proposes a practical and flexible evaluation method without a
 
 
 
-The system has two modules, Bias Measurement and Truth Discovery, plus a shared utility. Each file includes a short usage example in its `\_\_main\_\_` block.
+The system has two modules, Bias Measurement and Truth Discovery, plus a shared utility. Each file includes a short usage example in its `__main__` block.
 
 
 
 **Bias Measurement**
 
-* `bias\_pipeline.py`: prompt analysis, i.e., classification of the prompt and generation of its variants
-* `bias\_query.py`: querying of the evaluated model with the prompt and its variants
-* `bias\_metrics.py`: bias measures (Confirmation Bias and FSI, Demographic Bias and VI, ERI)
-* `bias\_aggregator.py`: optional aggregation of the bias scores into one score per model
+* `bias_pipeline.py`: prompt analysis, i.e., classification of the prompt and generation of its variants
+* `bias_query.py`: querying of the evaluated model with the prompt and its variants
+* `bias_metrics.py`: bias measures (Confirmation Bias and FSI, Demographic Bias and VI, ERI)
+* `bias_aggregator.py`: optional aggregation of the bias scores into one score per model
 
 
 
 **Truth Discovery**
 
-* `claim\_decomposition.py`: decomposition of the responses into atomic claims
+* `claim_decomposition.py`: decomposition of the responses into atomic claims
 * `truthfinder.py`: implication matrix and TruthFinder
 
 
 
 **Shared**
 
-* `llm\_call\_utils.py`: helper for calls to OpenAI-compatible LLM APIs
+* `llm_call_utils.py`: helper for calls to OpenAI-compatible LLM APIs
 
 
 
