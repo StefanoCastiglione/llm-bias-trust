@@ -10,15 +10,16 @@ Advisor: Prof. Cinzia Cappiello
 
 ## Abstract
 
-As Large Language Models (LLMs) are increasingly used in tasks where their answers provide decisive input for users’ decisions, it becomes important to raise awareness of their weaknesses. Their behavior depends heavily on the training data, which contains society’s false beliefs and prejudices, so responses can be biased, i.e., unfairly affected by who the question is about or how it is formulated. Moreover, models can produce hallucinations, i.e., false pieces of information, presented alongside the correct ones without any warning.
+As Large Language Models (LLMs) are increasingly used in tasks where their answers provide decisive input for users’ decisions, it becomes important to raise awareness of their weaknesses. Their behavior depends heavily on the training data, which contains society’s false beliefs and prejudices, so responses can be biased, i.e., unfairly affected by who the question is about or how it is formulated. Moreover, models can produce hallucinations, i.e., false information, presented alongside correct information without warning.
 
 This thesis presents a framework that allows users to evaluate LLMs from the outside, in a setting where their internals are inaccessible and no external source can be safely treated as ground truth, by relying only on black-box access and on the models’ own answers.
 
-The system is composed of two modules. The *Bias Measurement* module aims to quantify bias in the responses through prompt perturbation: the higher the semantic distance between the responses to variants of the same prompt, the higher the indication of bias. The *Truth Discovery* module aims to detect hallucinations by weighing the consensus across multiple models, with an adaptation of the TruthFinder algorithm, which computes source trustworthiness and claim confidence together.
+The system is composed of two modules. The Bias Measurement module aims to quantify bias in the responses through prompt perturbation: the greater the semantic distance between responses to variants of the same prompt, the stronger the indication of bias. The Truth Discovery module aims to detect hallucinations by weighing consensus across multiple models, using an adaptation of TruthFinder, an algorithm that computes source trustworthiness and claim confidence together.
 
-The system was validated on synthetic scenarios and showed the intended behavior both in measuring bias and in separating the confidence of true claims from that of false ones. A small-scale experiment on real LLM responses then found, on average, lower trustworthiness for the models with worse bias scores, as expected.
+The system was validated on synthetic scenarios and showed the intended behavior in both measuring bias and separating the confidence of true claims from that of false ones. A small-scale experiment on real LLM responses then found, on average, lower trustworthiness for the models with worse bias scores, as expected.
 
 Overall, this work proposes a practical and flexible evaluation method without accessing internal model parameters or other knowledge sources.
+
 
 
 
